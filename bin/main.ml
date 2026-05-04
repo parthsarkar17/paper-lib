@@ -8,7 +8,8 @@ module Exec_context = struct
 
   let parse_argv (args : string array) : t =
     let error_msg =
-      "Bad Arguments: (<'query'> <keyword+> | <'add'> <paper_filename> <keyword+>)"
+      "Bad Arguments: (<'query'> <keyword+> | <'add'> <paper_filename> \
+       <keyword+>)"
     in
     match Array.to_list args with
     | _ :: "query" :: queries ->
